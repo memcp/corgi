@@ -1,0 +1,21 @@
+@import "reset.css";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Exo', sans-serif;
+}
+
+h1 {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.app {
+  margin: 0 auto;
+  max-width: 1180px;
+  width: 100%;
+}

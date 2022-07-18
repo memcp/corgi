@@ -5,7 +5,8 @@ import { Provider } from "react-redux";
 import App from "./components/App";
 import { store } from "./redux/store";
 
-const root = ReactDOMClient.createRoot(document.querySelector('#root'));
+
+const root = ReactDOMClient.createRoot(document.querySelector("#root"));
 root.render(
   <Provider store={ store }>
     <App />

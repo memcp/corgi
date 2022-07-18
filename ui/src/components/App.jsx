@@ -1,22 +1,28 @@
-import { useEffect } from "react";
-import { useDispatch, useSelector } from "react-redux";
+import { Routes, Route } from "react-router-dom";
 
-import { increment } from "../redux/exampleSlice";
+import Login from "../pages/Login";
+import Signup from "../pages/Signup";
 
 import "../styles/App.css";
 
 
 function App() {
-  const value = useSelector((state) => state.example.value);
-  const dispatch = useDispatch();
-  useEffect(() => {
-    dispatch(increment);
-  }, []);
-
   return (
-    <div className="app">
-      <h1>Corgi</h1>
-    </div>
+    <>
+      <div className="app">
+      </div>  
+      
+      <Routes>
+        <Route 
+          path="/projects/corgi/"
+          element={ Login }
+        />
+        <Route 
+          path="/projects/corgi/signup/"
+          element={ Signup }
+        />
+      </Routes>
+    </>
   );
 }
 

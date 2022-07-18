@@ -15,7 +15,7 @@ function App() {
 
   return (
     <div className="app">
-      <h1>React App</h1>
+      <h1>Corgi</h1>
     </div>
   );
 }
